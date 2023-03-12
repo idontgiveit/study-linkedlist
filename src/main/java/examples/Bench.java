@@ -9,8 +9,6 @@ import java.util.function.Supplier;
 
 public class Bench {
     public static void main(String[] args) {
-        ArrayList<Integer> arrayList = new ArrayList<>();
-        LinkedList<Integer> linkedList = new LinkedList<>();
 
 //        runBench(Bench::insertIntoMiddle, ArrayList::new, 100000, 1, "Insert intto middle arraylist");
 //        runBench(Bench::insertIntoMiddle, LinkedList::new, 100000, 1, "Insert intto middle linkedlist");
@@ -29,13 +27,13 @@ public class Bench {
 //        runBench(Bench::removeFromHead, () -> fillList(new ArrayList<>(), cnt), cnt, 1, "remove from head arraylist");
 //        runBench(Bench::removeFromHead, () -> fillList(new LinkedList<>(), cnt), cnt, 1, "remove from head linkedlist");
 
-//        int cnt = 100000;
+ //       int cnt = 100000;
 //        runBench(Bench::removeFromTail, () -> fillList(new ArrayList<>(), cnt), cnt, 1, "remove from head arraylist");
 //        runBench(Bench::removeFromTail, () -> fillList(new LinkedList<>(), cnt), cnt, 1, "remove from head linkedlist");
 
-        int cnt = 100000;
-        runBench(Bench::readAll, () -> fillList(new ArrayList<>(), cnt), cnt, 1, "remove from head arraylist");
-        runBench(Bench::readAll, () -> fillList(new LinkedList<>(), cnt), cnt, 1, "remove from head linkedlist");
+//        int cnt = 100000;
+//        runBench(Bench::readAll, () -> fillList(new ArrayList<>(), cnt), cnt, 1, "read all arraylist");
+//        runBench(Bench::readAll, () -> fillList(new LinkedList<>(), cnt), cnt, 1, "read all linkedlist");
 
     }
 
